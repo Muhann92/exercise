@@ -107,6 +107,16 @@ if length1 %2 == 0:
 else :
     print  (text7 + " -->" , "odd")
     
+length2 = len (text8)
 
+if length2 %2 ==0:
+     print (text8 + " -->", "even" )
+else :
+     print (text8 + " -->", "odd" )
     
-    
+length3 = len (text9)
+
+if length3 %2 ==0:
+     print (text9 + "-->", "even")
+else:
+     print(text9 + "-->","odd")
