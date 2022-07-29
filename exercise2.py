@@ -13,14 +13,10 @@ email_provider = []
 
 
 
-#for i in emails:
-  #  email_provider.append(i.split("@")[-1])
- #   username.append(i.split("@")[0])
-#print(email_provider)
-#print(username)
+
 
 for i in emails:
-    email_provider.append(i.split('@')[-1])
     username.append(i.split('@')[0])
-print(str("Email_Provider:"), email_provider )
-print(str("Username:"), username)
+    email_provider.append(i.split('@') [-1])
+print(str('Username_List: '), username)
+print(str('Email_Provider_List: '), email_provider)
