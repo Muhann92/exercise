@@ -10,13 +10,9 @@ email_provider = []
 # usernames = ["test"]
 # email_provider = ["mail.com"]
 
-
-
-
-
-
 for i in emails:
     username.append(i.split('@')[0])
     email_provider.append(i.split('@') [-1])
 print(str('Username_List: '), username)
+print()
 print(str('Email_Provider_List: '), email_provider)
