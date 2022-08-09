@@ -14,5 +14,4 @@ for i in emails:
     username.append(i.split('@')[0])
     email_provider.append(i.split('@') [-1])
 print(str('Username_List: '), username)
-print()
-print(str('Email_Provider_List: '), email_provider)
+print(str('\nEmail_Provider_List: '), email_provider)
