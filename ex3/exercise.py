@@ -112,3 +112,30 @@ Your task is to write a program that prints the numbers from 1 to 100.
 
 '''
 print('>>>>>> Task5 <<<<<<')
+
+num = range(1,101)
+for i in num:
+    if i%3 + i%5 == 0:
+        print('FizzBuzz')
+        continue
+    if (i % 3) == 0:
+        print('fizz')
+        continue
+    if (i % 5) == 0:
+        print('Buzz')
+        continue
+    print(i)
+
+#Task 6 - divisible numbers
+'''
+Your task is to write a program to print all the numbers between 1000 and 2000 which are divisible by 7 but are not a multiple of 5.
+'''
+print('>>>>>> Task6 <<<<<<')
+
+for i in range(1000,2001):
+    if (i%5) == 0:
+        continue
+    if (i%7) == 0:
+        print(i)
+
+
