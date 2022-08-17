@@ -102,7 +102,7 @@ print('\n>>>>>> Task5 <<<<<<\n')
 
 numlist = []
 for i in range(1,11):
-        numlist.append(i)
+        numlist.insert(i)
 
 random.shuffle(numlist)
 
@@ -120,3 +120,61 @@ def guess_a_number():
 guess_a_number()
 
 # Task 6 - Celsius to Fahrenheit conversion
+'''
+Your task is to write a Python program to convert temperatures to and from Celsius, Fahrenheit.
+
+In the centigrade scale, which is also called the Celsius scale, water freezes at 0 degrees and boils at 100 degrees.  
+In the Fahrenheit scale, water freezes at 32 degrees and boils at 212 degrees. 
+
+'''
+print('\n>>>>>> Task6 <<<<<<\n')
+
+print('\nConvert temperatures to and from Celsius, Fahrenheit.\n')
+
+print('F - Fahrenheit, C - Celsius')
+
+scale = input('Enter the scale shortcut you would like to convert: ')
+temp = float(input('Enter temperature: '))
+
+if scale.upper() == 'C':
+    celsius = (temp*9/5) + 32
+    print('The temperature in Fahrenheit is',celsius,'degrees.')
+elif scale.upper() == 'F':
+    fahrenheit = (temp-32)*5/9
+    print('The temperature in Celsius is',fahrenheit,'degrees.')
+
+
+# Task 7 - pattern
+
+'''
+our task is to write a Python program to construct the following pattern. Upper part should be done **in one line** of code without using a loop.  
+Lower part can be done with any kind of loop **or** also with one line of code and without loops.
+'''
+
+print('\n>>>>>> Task7 <<<<<<\n')
+
+print('*','* '*2, '* '*3,'* '*4,'* '*5,sep=('\n'))
+print('* '*4,'* '*3,'* '*2,'* ',sep=('\n'))
+
+# Task 8 - Fibonacci series
+
+'''
+Your task is to write a Python program to get the Fibonacci series between 0 to 50.  
+>Note: The Fibonacci Sequence is the series of numbers :
+0, 1, 1, 2, 3, 5, 8, 13, 21, ....  
+Every next number is found by adding up the two numbers before it. 
+'''
+print('\n>>>>>> Task8 <<<<<<\n')
+
+first = 0
+second = 1
+count = 0
+print(first,second,sep=('\n'))
+
+while count < 50:
+    count = first + second
+    print(count)
+    first = second
+    second = count
+    if first+second >= 50:
+       break
