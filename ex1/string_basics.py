@@ -14,7 +14,7 @@ print("\n>>>>>> Task2 <<<<<<\n")
 city = "berlin"
 population = "3645000"
 
-print (city ,population ,sep=": ")
+print (city.capitalize() + population , sep=": ")
 
 
 print("_____________________________________________")
