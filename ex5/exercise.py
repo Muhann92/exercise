@@ -23,7 +23,7 @@ num1 = int(input('\nEnter first Number: '))
 num2 = int(input('Enter second Number: '))
 num3 = int(input('Enter third Number: '))
 
-sum  = num1 + num2 + num3
+sum = num1+ num2+ num3
 
 print('\nFirst number: ',num1)
 print('Second number: ',num2)

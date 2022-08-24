@@ -83,7 +83,7 @@ while True:
                   "Service_Worker:Yes Mr Officer,we’er about to collect this last Floor,\n",
                   "the container_truck waiting at the end of the Slid.\n")
                   print("\naha here its the Slid to the Container get in quick!")
-                  print("\nGreat in few Minutes you’ll be Free!")
+                  print("\nGreat in few Minutes you’ll be Free...")
                   loop = 1
       else:
             loop == 1
