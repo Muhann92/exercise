@@ -4,9 +4,9 @@ speed = float(0.5)
 time.sleep(speed)
 
 parser = argparse.ArgumentParser(description='Enter Firstname , Lastname and Age')
-parser.add_argument('-f' , help=' Firstname ')
-parser.add_argument('-l' , help=' Lastname ')
-parser.add_argument('-a' ,type=int, help=' Age ')
+parser.add_argument('-f' ,metavar='FIRST_NAME', help=' Firstname ')
+parser.add_argument('-l' ,metavar='LAST_NAME', help=' Lastname ')
+parser.add_argument('-a' ,type=int,metavar='AGE', help=' Age ')
 parser.add_argument('--fast' , help=' enable fast mode')
 
 args = parser.parse_args()
