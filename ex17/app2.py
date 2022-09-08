@@ -16,12 +16,18 @@ if args.fast == None:
 elif args.fast == "f":
     speed = float(0)
     print("Fast mode activated\n")
+    
+# if args.fast == False:
+#     print("Slow mode is active\n")
+# elif args.fast == True:
+#     speed = float(0)
+#     print("Fast mode activated\n")
 
 if args.f == None:
-    args.f = "Hanson"
+    args.f = "Larry"
 
 if args.l == None:
-    args.l = "Larry"
+    args.l = "Hanson"
     
 if args.a == None:
     args.a = "100"
