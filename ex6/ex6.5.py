@@ -20,6 +20,13 @@ print("OKAY THEY LEFT!!!\n")
 
 loop = 0
 
+def exit_game():
+            exit_game = input("\nDo you want to continue? Y/N:")
+            if exit_game == ("n"):
+                  exit()
+            if exit_game == ("y"):
+                  loop = 0
+
 while True:
       # First Game Event
       while loop == 0:
@@ -33,47 +40,35 @@ while True:
                   choice = input("Pickup a Tool: ")
 
             # Tool 1 
-            if choice == "1":
-                  print("\nYou cut out the Prison Cell Window and jumped out.\n")
-                  print("Oops:) your Cell is in the 14th floor you'en smashed to the ground and died!\n")
-                  print(Fore.LIGHTRED_EX+"")
-                  tprint("FAIL", font="tarty1")
-                  print(""+Style.RESET_ALL)
-
-                  # Optional Exit Loop
-                  exit_game = input("\nDo you want to continue? Y/N:")
-                  if exit_game == ("n"):
-                        exit()
-                  if exit_game == ("y"):
-                        loop = 0
-
+            if choice == "1": 
+                  print("(1) cut Window - (2) cut Door ")
+                  choice1 = input("Choose your way: ")
+                  if choice1 == "1":      
+                     print("\nYou cut out the Prison Cell Window and jumped out.\n")
+                     print("Oops:) your Cell is in the 3th floor you'en smashed to the ground and died!\n")
+                     print(Fore.LIGHTRED_EX+"")
+                     tprint("OUCH", font="tarty1")
+                     print(""+Style.RESET_ALL)
+                     exit_game()
+                  elif choice1 == "2":
+                        print("After you broke out of the Cell!"\
+                              "some how you managed get to down floor"\
+                              "")
             # Tool 2  
             elif choice =="2":
                   print("\nYou’en Teleported into the Shooting ring during trainings hour!(~_~)")
                   print(Fore.LIGHTRED_EX+"")
                   tprint("FAIL", font="tarty1")
                   print(""+Style.RESET_ALL)
-
-                  # Optional Exit Loop
-                  exit_game = input("\nDo you want to continue? Y/N:")
-                  if exit_game == ("n"):
-                        exit()
-                  if exit_game == ("y"):
-                        loop = 0
+                  exit_game()
 
             # Tool 3
             elif choice =="3":
                   print("\nRoom is too small you died by the explosion(*-*)")
                   print(Fore.LIGHTRED_EX+"")
-                  tprint("FAIL", font="tarty1")
+                  tprint("BOOM!", font="tarty1")
                   print(""+Style.RESET_ALL)
-
-                  # Optional Exit Loop
-                  exit_game = input("\nDo you want to continue? Y/N:")
-                  if exit_game == ("n"):
-                        exit()
-                  if exit_game == ("y"):
-                        loop = 0
+                  exit_game()
 
             # Tool 4 and last GAME EVENT
             elif choice =="4":
