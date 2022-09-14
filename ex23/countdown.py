@@ -8,21 +8,25 @@ def countdown(t): # define the countdown func.
     while t:
         mins , secs = divmod(t, 60) # The divmod() function returns a tuple containing the quotient
 
-        timer = '{:02d}:{:02d}'.format(mins, secs)
+        timer = '{:02d}:{:02d}'.format(mins, secs) # Str.format
 
         print(timer, end='\r')
-        time.sleep(1)
+        time.sleep(0.5)
         t -= 1
 
-    print("Timeout")
+    os.system("clear") # clear Terminal
+
+    print("Timeout!!!\n")
 
 t = input("Enter time in Seconds: ")  # input time in seconds
 
 countdown(int(t)) # function call
 
-os.system("clear") # clear Terminal
-
 et = time.time() # Capture End Time
+
+tg =  t # Time given
+time.sleep(1)
+print("Seconds counted down: ",tg)
 
 elapsed_time = et -st # Calculate taking time to finish
 
