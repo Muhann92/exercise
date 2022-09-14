@@ -1,7 +1,7 @@
 import time  # import the time module
-import sys ,os
+import os
 
-st = time.time()
+st = time.time() # Capture Start Time
 
 def countdown(t): # define the countdown func.
     
@@ -20,11 +20,14 @@ t = input("Enter time in Seconds: ")  # input time in seconds
 
 countdown(int(t)) # function call
 
-et = time.time()
+os.system("clear") # clear Terminal
 
-elapsed_time = et -st
-time.sleep(0.5)
-print(f"Start Time:{time.ctime(st)} \nEnd Time:{time.ctime(et)}")
+et = time.time() # Capture End Time
 
-time.sleep(0.5)
-print('Execution time:', elapsed_time, 'Seconds')
+elapsed_time = et -st # Calculate taking time to finish
+
+time.sleep(1)
+print(f"Start Time: {time.ctime(st)} \nEnd Time: {time.ctime(et)}")
+
+time.sleep(1)
+print('Execution time:', round(elapsed_time), 'Seconds')
