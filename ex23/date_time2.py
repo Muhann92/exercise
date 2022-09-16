@@ -36,11 +36,21 @@ print("##################################\n\
 ##################################\n")
 
 # Reminder message to customer.
-reminder = "Hello Friedrich, your rent of 300 € is due on 25 January, 2021." 
+
 
 # Creating a datetime 
 start_date = datetime(year=2022, month=9, day=25)
 
+str_mon = start_date.strftime("%B")
+
+str_day = start_date.strftime("%d")
+
+reminder = "25"
+
+messag = f"Hello Friedrich, your rent of 300 € is due on 1 October,{start_date.year}." 
+
+if reminder == str_day:
+    print(messag)
 
 
 
