@@ -38,7 +38,7 @@ def Checkleap(Year):
     else:
         print(f"{Year} is not a leap Year!")
     
-Checkleap(Year=2021)
+Checkleap(Year=1992)
 
 
 print("##################################\n\
@@ -50,4 +50,5 @@ date_as_string = "Feb 14 2021 8:30AM"
 datetime_object = dt.strptime(date_as_string,'%b %d %Y %I:%M%p')
 
 print(datetime_object)
+
 

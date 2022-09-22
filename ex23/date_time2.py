@@ -1,5 +1,4 @@
-from calendar import day_name
-from datetime import datetime , timedelta
+from datetime import datetime , timedelta ,date
 import os
 
 
@@ -43,4 +42,7 @@ print("##################################\n\
 start_date = datetime(year=2022, month=9, day=25) # Creating a datetime instance 
 
 if start_date.day >= 25:
-    print(f"Hello Friedrich, your rent of 300 € is due on 1 October,{start_date.year}.")    
+    print(f"Hello Friedrich, your rent of 300 € is due on 1 October,{start_date.year}.")
+
+
+
